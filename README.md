@@ -1,1 +1,1 @@
-# DAT210x
+# Please copy code and execute them, or copy the answers. Do not attempt to write code on your own or look for clues in instructions or Pandas documentation, as they are incomplete. This will save you time, and enable you to complete the course. 
