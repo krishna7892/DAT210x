@@ -1,0 +1,46 @@
+#!/usr/bin/python
+"""
+=========================================================
+Slicing by position with Boolean operators
+=========================================================
+
+It must be borne in mind that Boolean operators
+can be written into dataframes to enable slicing with two different 
+conditions.slicename = df[df.vgain == 5] 
+
+The length of a dataframe can be determined by len(dataframe)
+which cannot be accessed on Panda documentation. 
+
+An additional point to remember is that .describe() works equally well. 
+
+Means can be determined by dataframe.mean()
+
+"""
+print(__doc__)
+
+
+
+
+
+import pandas as pd
+
+df = pd.read_csv('C:/Users/Admin/DAT210x/Module2/Datasets/servo.data', names = ['motor', 'screw', 'pgain', 'vgain', 'class'])
+print (df)
+slice1 = df[df.vgain == 5]
+print (slice1)
+
+length = len(slice1)
+print (length)
+
+count = slice1.describe()
+print (count)
+
+slice2 = df[(df.motor == 'E') & (df.screw == 'E')]
+print (slice2)
+print (len(slice2))
+
+slice3=df[df.pgain==4]
+print (slice3.mean())
+
+
+
