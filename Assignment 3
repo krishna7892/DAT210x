@@ -15,6 +15,7 @@ An additional point to remember is that .describe() works equally well.
 
 Means can be determined by dataframe.mean()
 
+The answers are 22, 6 and 2.060606
 """
 print(__doc__)
 
